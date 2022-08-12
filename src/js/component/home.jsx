@@ -1,24 +1,20 @@
-import React from "react";
+import React, {  useState } from "react";
+import Font from 'react-font'
+import Form from "./form.jsx";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
-
-//create your first component
 const Home = () => {
+
 	return (
-		<div className="text-center">
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
+		<div className="text-center" style={{ marginTop: "1rem" }}>
+			
+			<Font family='Fredericka the Great'>
+				<h3 style={{ color: "rgb(244, 209, 166)", fontSize: "5rem" }}>
+					To do list
+				</h3>
+			</Font>
+			
+			<Form />
+
 		</div>
 	);
 };
